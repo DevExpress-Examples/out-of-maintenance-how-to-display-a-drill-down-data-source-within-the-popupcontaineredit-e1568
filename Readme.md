@@ -1,8 +1,8 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [DrillDownControl.cs](./CS/Q212065/DrillDownControl.cs) (VB: [DrillDownControl.vb](./VB/Q212065/DrillDownControl.vb))
-* [Form1.cs](./CS/Q212065/Form1.cs) (VB: [Form1.vb](./VB/Q212065/Form1.vb))
+* [DrillDownControl.cs](./CS/PivotGridDrillDownDataExample/DrillDownControl.cs) (VB: [DrillDownControl.vb](./VB/PivotGridDrillDownDataExample/DrillDownControl.vb))
+* [Form1.cs](./CS/PivotGridDrillDownDataExample/Form1.cs) (VB: [Form1.vb](./VB/PivotGridDrillDownDataExample/Form1.vb))
 <!-- default file list end -->
 # How to Show Drill Down Data in the Popup Window
 
