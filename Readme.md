@@ -22,7 +22,7 @@ API in this example:
 * [RepositoryItemPopupContainerEdit.QueryPopUp](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemPopupBase.QueryPopUp) event
 * [RepositoryItemPopupContainerEdit.CloseUp](https://docs.devexpress.com/WindowsForms/DevExpress.XtraEditors.Repository.RepositoryItemPopupBase.CloseUp) event
 
-![screenshot](https://github.com/DevExpress-Examples/how-to-display-a-drill-down-data-source-within-the-popupcontaineredit-e1568/blob/13.1.4%2B/images/screenshot.png)
+![screenshot](./images/screenshot.png)
 
 See also:
 * [Assigning Editors to Data Field's Cells](https://docs.devexpress.com/WindowsForms/5893/controls-and-libraries/pivot-grid/data-shaping/editing/assigning-editors-to-data-field's-cells)
