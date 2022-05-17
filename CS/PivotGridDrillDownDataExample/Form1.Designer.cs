@@ -25,12 +25,15 @@ namespace PivotGridDrillDownDataExample
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding1 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding2 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
+            DevExpress.XtraPivotGrid.DataSourceColumnBinding dataSourceColumnBinding3 = new DevExpress.XtraPivotGrid.DataSourceColumnBinding();
             this.pivotGridControl1 = new DevExpress.XtraPivotGrid.PivotGridControl();
             this.salesPersonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nwindDataSet = new PivotGridDrillDownDataExample.nwindDataSet();
-            this.fieldCategoryName = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldSalesPerson = new DevExpress.XtraPivotGrid.PivotGridField();
-            this.fieldUnitPrice = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldCategoryName1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldSalesPerson1 = new DevExpress.XtraPivotGrid.PivotGridField();
+            this.fieldUnitPrice1 = new DevExpress.XtraPivotGrid.PivotGridField();
             this.repositoryItemPopupContainerEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit();
             this.salesPersonTableAdapter = new PivotGridDrillDownDataExample.nwindDataSetTableAdapters.SalesPersonTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pivotGridControl1)).BeginInit();
@@ -45,11 +48,12 @@ namespace PivotGridDrillDownDataExample
             this.pivotGridControl1.DataSource = this.salesPersonBindingSource;
             this.pivotGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotGridControl1.Fields.AddRange(new DevExpress.XtraPivotGrid.PivotGridField[] {
-            this.fieldCategoryName,
-            this.fieldSalesPerson,
-            this.fieldUnitPrice});
+            this.fieldCategoryName1,
+            this.fieldSalesPerson1,
+            this.fieldUnitPrice1});
             this.pivotGridControl1.Location = new System.Drawing.Point(0, 0);
             this.pivotGridControl1.Name = "pivotGridControl1";
+            this.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized;
             this.pivotGridControl1.Size = new System.Drawing.Size(711, 411);
             this.pivotGridControl1.TabIndex = 0;
             // 
@@ -63,29 +67,32 @@ namespace PivotGridDrillDownDataExample
             this.nwindDataSet.DataSetName = "nwindDataSet";
             this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // fieldCategoryName
+            // fieldCategoryName1
             // 
-            this.fieldCategoryName.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
-            this.fieldCategoryName.AreaIndex = 0;
-            this.fieldCategoryName.Caption = "Category Name";
-            this.fieldCategoryName.FieldName = "CategoryName";
-            this.fieldCategoryName.Name = "fieldCategoryName";
+            this.fieldCategoryName1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea;
+            this.fieldCategoryName1.AreaIndex = 0;
+            this.fieldCategoryName1.Caption = "Category Name";
+            dataSourceColumnBinding1.ColumnName = "CategoryName";
+            this.fieldCategoryName1.DataBinding = dataSourceColumnBinding1;
+            this.fieldCategoryName1.Name = "fieldCategoryName1";
             // 
-            // fieldSalesPerson
+            // fieldSalesPerson1
             // 
-            this.fieldSalesPerson.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
-            this.fieldSalesPerson.AreaIndex = 0;
-            this.fieldSalesPerson.Caption = "Sales Person";
-            this.fieldSalesPerson.FieldName = "Sales Person";
-            this.fieldSalesPerson.Name = "fieldSalesPerson";
+            this.fieldSalesPerson1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea;
+            this.fieldSalesPerson1.AreaIndex = 0;
+            this.fieldSalesPerson1.Caption = "Sales Person";
+            dataSourceColumnBinding2.ColumnName = "Sales Person";
+            this.fieldSalesPerson1.DataBinding = dataSourceColumnBinding2;
+            this.fieldSalesPerson1.Name = "fieldSalesPerson1";
             // 
-            // fieldUnitPrice
+            // fieldUnitPrice1
             // 
-            this.fieldUnitPrice.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
-            this.fieldUnitPrice.AreaIndex = 0;
-            this.fieldUnitPrice.FieldEdit = this.repositoryItemPopupContainerEdit1;
-            this.fieldUnitPrice.FieldName = "UnitPrice";
-            this.fieldUnitPrice.Name = "fieldUnitPrice";
+            this.fieldUnitPrice1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea;
+            this.fieldUnitPrice1.AreaIndex = 0;
+            dataSourceColumnBinding3.ColumnName = "UnitPrice";
+            this.fieldUnitPrice1.DataBinding = dataSourceColumnBinding3;
+            this.fieldUnitPrice1.FieldEdit = this.repositoryItemPopupContainerEdit1;
+            this.fieldUnitPrice1.Name = "fieldUnitPrice1";
             // 
             // repositoryItemPopupContainerEdit1
             // 
@@ -119,10 +126,10 @@ namespace PivotGridDrillDownDataExample
         }
 
         private DevExpress.XtraPivotGrid.PivotGridControl pivotGridControl1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldCategoryName1;
         private DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit repositoryItemPopupContainerEdit1;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldSalesPerson;
-        private DevExpress.XtraPivotGrid.PivotGridField fieldUnitPrice;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldSalesPerson1;
+        private DevExpress.XtraPivotGrid.PivotGridField fieldUnitPrice1;
         private nwindDataSet nwindDataSet;
         private System.Windows.Forms.BindingSource salesPersonBindingSource;
         private nwindDataSetTableAdapters.SalesPersonTableAdapter salesPersonTableAdapter;

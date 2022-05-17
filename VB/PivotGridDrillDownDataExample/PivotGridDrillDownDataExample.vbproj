@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -6,15 +6,17 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{82FC645B-CB54-49F9-A9E3-A99279B83864}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>PivotGridDrillDownDataExample</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -26,6 +28,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,17 +38,23 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v13.1" />
-    <Reference Include="DevExpress.PivotGrid.v13.1.Core" />
-    <Reference Include="DevExpress.Printing.v13.1.Core" />
-    <Reference Include="DevExpress.Utils.v13.1" />
-    <Reference Include="DevExpress.XtraEditors.v13.1" />
-    <Reference Include="DevExpress.XtraGrid.v13.1" />
-    <Reference Include="DevExpress.XtraLayout.v13.1" />
-    <Reference Include="DevExpress.XtraPivotGrid.v13.1" />
-    <Reference Include="DevExpress.XtraPrinting.v13.1" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.PivotGrid.v21.2.Core" />
+    <Reference Include="DevExpress.Pdf.v21.2.Core" />
+    <Reference Include="DevExpress.Office.v21.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Export" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.XtraGrid.v21.2" />
+    <Reference Include="DevExpress.XtraLayout.v21.2" />
+    <Reference Include="DevExpress.XtraPivotGrid.v21.2" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -104,6 +113,7 @@
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="nwindDataSet.xsc">
